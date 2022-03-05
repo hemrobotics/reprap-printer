@@ -742,14 +742,15 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100, 80, 2560, 94 }
+// [2021-12-12 Sun] Experimented value of E is 95 as of now.
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100, 80, 2560, 95 }
 
 /**
  * Default Max Feed Rate (mm/s)
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 300, 300, 2.25, 25 }
+#define DEFAULT_MAX_FEEDRATE          { 200, 200, 2.25, 25 }
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
